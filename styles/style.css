@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 0 7%;
+}
+/* header styles */
+.head-one{
+     /* width: 100%;
+    margin: 50px 0;
+    display: flex;
+     background-color: #161616; 
+     border-radius: 30px; */
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     width: 100%;
+     margin: 50px 0;
+      background-color: #161616; 
+      border-radius: 30px;
+} 
+.title-all{
+    box-sizing: border-box;
+}
+.title-text{
+    /* width: 50%; */
+    padding: 100px 140px;
+}
+
+.title-text h1{
+      font-size: 70px;
+      font-weight: 700px;
+      color: white
+}
+.title-text p{
+    font-size: 16px;
+    color: white;
+}
+
+.title-text button{
+    color: white;
+    margin-top: 30px;
+    background-color: red;
+    border-radius: 8px;
+    padding: 16px 28px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.title-text button:hover{
+    color: #161616;
+    background-color: #fff;
+    padding: 20px 32px;
+}
+
+.title-image{
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+}
+
+.title-image img{
+    width: 70%;
+   /* position: relative; */
+}
+
+/* section one */
+
+.section-one{
+    margin: 150px 0 50px 0;
+    display: flex;
+}
+
+.buttons{
+    height: 285px;
+    background-color: #161616;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.buttons button{
+    width: 252px;
+    display: block;
+    padding: 17px 40px;
+}
+.buttons button a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #161616;
+    text-decoration: none;
+}
+.button-one{
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.button-two{
+    background-color: red;
+    border-radius: 10px;
+}
+
+.buttons .button-two .btn-white{
+    color: white;
+}
+/* transfer market */
+ .transfer-market{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.transfers{
+    width: 400px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+} 
+ .transfers .transfer img{
+    width: 399px;
+    height: 200px;
+}
+
+.transfer-info, .transfer-icon{
+    padding: 20px;
+    text-align: start;
+}
+
+.transfer-info button{
+    width: 80px;
+    background: transparent;
+    border: 1px solid #161616;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.transfer-info button a{
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #161616;
+}
+
+.transfer-info h3{
+    margin-bottom: 17px;
+}
+
+.transfer-icon span{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.fa-clock, .fa-comment-dots{
+    color: #999;
+    cursor: pointer;
+}
+
+.mobile-button{
+    
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-button button{
+    color: white;
+    border: none;
+    background-color: red;
+    border-radius: 8px;
+    padding: 16px 38px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+
+/* footer starts */
+
+footer{
+    width: 100%;
+    background-color: #161616;
+}
+footer h2{
+    font-size: 50px;
+    padding: 120px 0 60px 0  ;
+    color: #fff;
+    text-align: center;
+}
+footer hr{
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-one{
+    width: 85%;
+    margin: auto;
+    padding: 4% 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-one ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+    position: relative;
+}
+.footer-one ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#extra{
+    display: none !important;
+}
+.social-media{
+    width: 60%;
+    margin: auto;
+    padding: 2% 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.social-media a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*----------------------
+ upcoming match section 
+----------------------- */
+
+
+
+
+.game-day{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.matches{
+    width: 380px;
+    height: 240px;
+    border: 1px solid #E8E8E8;
+    border-radius: 0;
+    margin-left: 24px;
+    margin-bottom: 24px;
+} 
+.team-flag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.team-info{
+    text-align: center;
+    padding-top: 30px;
+}
+.team-info h3{
+    font-size: 20px;
+}
+.team-info p{
+    font-size: 14px;
+}
+.match-button{
+    background-color: red;
+    border-radius: 10px;
+}
+.blog-button{
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.buttons .blog-button .btn-black{
+    color: black;
+} 
+.buttons .match-button .btn-white-two{
+    color: #fff;
+}
+
+
+
+
+
+
+/*----------------
+ upcoming match section end
+ ------------------- */
+
+
+
+
+
+
+/* media quaries */
+/* mobile devices */
+
+@media only screen and (max-width: 480px) {
+    .head-one{
+        /* width: 100%;
+        display:block;
+        justify-content: center;
+         grid-row-gap: 30px; */
+         width: 100%;
+         display:grid;
+         grid-template-columns: repeat(1,0fr);
+         justify-content: center;
+         grid-row-gap: 10px;
+         
+    }
+    .title-text{
+         text-align: center;
+        padding: 10px;
+    }
+    .title-text h1{
+        font-size: 28px;
+        font-weight: 400px;
+        color: white
+    }
+    .title-text p{
+        font-size: 12px;
+        color: white;
+    }
+    .title-text button{
+        color: white;
+        margin-top: 20px;
+        background-color: red;
+        border-radius: 8px;
+        padding: 8px 14px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .title-text button:hover{
+        color: #161616;
+        background-color: #fff;
+        padding: 10px 16px;
+    }
+   
+    
+    .title-image img{
+       width: 150px;
+       height: 230px;
+       /* position: relative; */
+    }
+    .section-one{
+        margin: 30px 0 10px 0;
+       display: flex;
+       flex-direction: column;
+   }
+   .buttons{
+    height: 285px;
+    background: transparent;
+    align-items: center;
+    padding: 20px 14px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-left: 30px;
+}
+.buttons button{
+    border: 1px solid #E8E8E8;
+}
+.transfer-market{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 15px;
+}
+.transfers{
+    width: 300px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 24px;
+}
+.transfers .transfer img{
+    width: 299px;
+    height: 200px;
+}
+.footer-one{
+    width: 85%;
+    margin: auto;
+    padding: 2% 34%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-one{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    justify-content: center;
+}
+.social-media{
+        width: 60%;
+        margin: auto;
+        padding: 2% 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+    }
+    .social-media a{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer; 
+}
+  
+   
+}
+    
+
+
+/*---------------- tab devices -------------*/
+@media only screen and (min-width:481px) and (max-width:768px){
+   
+    .head-one{
+        width: 634px;
+        height: 398px;
+    }
+    .title-text{
+        /* width: 50%; */
+        padding: 40px;
+    }
+    .title-text h1{
+        font-size: 30px;
+        font-weight: 700px;
+        color: white
+    }
+    .title-text p{
+        font-size: 10px;
+        color: white;
+    }
+    .title-text button{
+        color: white;
+        margin-top: 20px;
+        background-color: red;
+        border-radius: 8px;
+        padding: 12px 22px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .title-text button:hover{
+        color: #161616;
+        background-color: #fff;
+        padding: 14px 24px;
+    }
+    .section-one{
+         margin: 30px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons{
+        margin-left: -25px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        height: 120px;
+        background: transparent;
+        display: flex;
+        padding: 20px 20px;
+        border-radius: 10px;
+        gap: 20px;
+}
+
+.buttons button{
+    border: 1px solid #E8E8E8;
+}
+.button-one{
+    width: 30%;
+    height: 64px;
+}
+.button-two{
+    width: 30%;
+    height: 64px;
+    background-color: red;
+    border-radius: 10px;
+}
+.buttons button a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #161616;
+    text-decoration: none;
+}
+.transfer-market{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+}
+.transfers{
+    width: 300px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-bottom: 24px;
+}
+.transfers .transfer img{
+    width: 299px;
+    height: 200px;
+}
+.mobile-button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-one{
+    width: 85%;
+    margin: auto;
+    padding: 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-one{
+    text-align: center;
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+}
+.footer-one ul li{
+    padding-bottom: 10px;
+}
+#extra{
+    display: block !important;
+}
+
+}
